@@ -34,4 +34,8 @@ public class User {
         return moderator;
     }
 
+    public String getDisplayName() {
+        return this.name + " - " + this.points;
+    }
+
 }
