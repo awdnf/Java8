@@ -9,6 +9,12 @@ public class User {
     private int points;
     private boolean moderator;
 
+    public User() {}
+
+    public User(String name) {
+        this.name = name;
+    }
+
     public User(String name, int points) {
         this.name = name;
         this.points = points;
@@ -36,6 +42,10 @@ public class User {
 
     public String getDisplayName() {
         return this.name + " - " + this.points;
+    }
+
+    public void toggleModerator() {
+        this.moderator = !this.moderator;
     }
 
 }
