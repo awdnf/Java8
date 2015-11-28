@@ -48,4 +48,9 @@ public class User {
         this.moderator = !this.moderator;
     }
 
+    @Override
+    public String toString() {
+        return this.name + " - " + this.points + " - " + this.moderator;
+    }
+
 }

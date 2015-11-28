@@ -1,8 +1,5 @@
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
 .idea/
 .DS_Store
 *.class
 compile/
-local.properties
+*.iml
