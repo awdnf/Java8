@@ -5,6 +5,7 @@ package br.com.awdnf.defaultmethods;
  */
 public class User {
 
+    private long id;
     private String name;
     private int points;
     private boolean moderator;
@@ -18,6 +19,16 @@ public class User {
     public User(String name, int points) {
         this.name = name;
         this.points = points;
+    }
+
+    public User(long id, String name, int points) {
+        this.id = id;
+        this.name = name;
+        this.points = points;
+    }
+
+    public long getId() {
+        return this.id;
     }
 
     public String getName() {
